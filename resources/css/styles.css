@@ -320,7 +320,7 @@ picture {
 .bg-welcome {
   background-image: url(../img/home.svg);
   background-size: 8rem;
-  background-color: #090909;
+  background-color: var(--negroOscuro);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -354,6 +354,7 @@ picture {
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 1.5;
 }
 
 .welcome picture {
