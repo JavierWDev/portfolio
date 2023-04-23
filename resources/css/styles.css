@@ -354,7 +354,6 @@ picture {
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 1.5;
 }
 
 .welcome picture {
@@ -378,6 +377,7 @@ picture {
   letter-spacing: 1px;
   padding: 0 0 1rem 0;
   color: var(--grisClaro);
+  line-height: 1.5;
 }
 
 @media (min-width: 352px) {
