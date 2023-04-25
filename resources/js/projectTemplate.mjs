@@ -1,23 +1,24 @@
 async function leerProyectos() {
 
     //Prueba de conexion
-    const conx1 = fetch("./proyectos.json");
-    console.log("Primera conexion:"+conx1);
+    const conx1 = fetch("./proyectos.json")
+                .then(resultado => console.log("Primera Conexion: "+resultado));
 
-    const conx2 = fetch("/proyectos.json");
-    console.log("Segunda conexion:"+conx2);
 
-    const conx3 = fetch("proyectos.json");
-    console.log("Tercera conexion:"+conx3);
+    const conx2 = fetch("/proyectos.json")               
+                .then(resultado => console.log("Segunda Conexion: "+resultado));
 
-    const conx4 = fetch("../proyectos.json");
-    console.log("Cuarta conexion:"+conx4);
+    const conx3 = fetch("proyectos.json")                
+                .then(resultado => console.log("Tercera Conexion: "+resultado));
 
-    const conx5 = fetch("/../../proyectos.json");
-    console.log("Quinta conexion:"+conx5);
+    const conx4 = fetch("../proyectos.json")                
+                .then(resultado => console.log("Cuarta Conexion: "+resultado));
 
-    const conx6 = fetch("./../../proyectos.json");
-    console.log("Quinta conexion:"+conx6);
+    const conx5 = fetch("/../../proyectos.json")               
+                    .then(resultado => console.log("Quinta Conexion: "+resultado));
+
+    const conx6 = fetch("./../../proyectos.json")                
+                    .then(resultado => console.log("Sexta Conexion: "+resultado));
 
 
     try {
