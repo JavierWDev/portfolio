@@ -27,6 +27,7 @@
   --javascript: #f0db4f;
   --api: #a6bcbe;
   --github: #6e5494;
+  --php: #484C89;
   --links: #6cc644;
 
   /* ***************************************
@@ -319,7 +320,7 @@ picture {
 /* Welcome Header */
 .bg-welcome {
   background-image: url(../img/home.svg);
-  background-size: 8rem;
+  background-size: 7.5rem;
   background-color: var(--negroOscuro);
   display: flex;
   flex-direction: column;
@@ -375,9 +376,31 @@ picture {
   font-size: 1.4rem;
   font-weight: bold;
   letter-spacing: 1px;
-  padding: 0 0 1rem 0;
+  padding: 1rem 0;
   color: var(--grisClaro);
   line-height: 1.5;
+}
+
+.download_cv{
+  display: block;
+  width: 90%;
+  max-width: 30rem;
+  margin: 0 auto 1rem auto;
+  padding: 1rem 0;
+  font-size: 1.8rem;
+  background-color: var(--negroOscuro);
+  border: 3px solid var(--primarioOscuro);
+  color: var(--primarioClaro);
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform .3s, background-color .3s;
+}
+
+.download_cv:hover{
+  transform: scale(1.025);
+  background-color: var(--primarioOscuro);
+  color: var(--blanco);
 }
 
 @media (min-width: 352px) {
@@ -411,6 +434,10 @@ picture {
     padding: 0;
   }
 
+  .download_cv{
+    margin: 0;
+  }
+
   .welcome p {
     padding: 1rem 0;
     font-size: 1.8rem;
@@ -439,9 +466,12 @@ picture {
 .projects__container {
   width: 90%;
   margin: 0 auto;
+  gap: 1.5rem;
+}
+
+#template{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 1.5rem;
 }
 
 .section--title {
@@ -474,6 +504,7 @@ picture {
 .project__ss {
   display: flex;
   min-height: 20rem;
+  max-height: 22rem;
 }
 
 .project__ss img {
@@ -493,13 +524,14 @@ picture {
 
 .project__technologies p {
   border: 1px solid black;
+  border-radius: 5px;
   font-weight: bold;
   padding: 0.5rem 1rem;
   margin: 0;
   text-transform: uppercase;
 }
 
-.project__tittle {
+.project__title {
   color: var(--primario);
   font-size: 1.8rem;
 }
@@ -597,14 +629,14 @@ picture {
 }
 
 @media (min-width: 520px) {
-  .projects__container {
+  #template {
     width: 95%;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 780px) {
-  .projects__container {
+  #template {
     max-width: 110rem;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -613,13 +645,22 @@ picture {
 /* Technologies */
 .html {
   background-color: var(--html);
+  text-transform: uppercase;
 }
 
 .css {
   background-color: var(--css);
+  text-transform: uppercase;
 }
 
-.js {
+.javascript {
   background-color: var(--javascript);
+  text-transform: capitalize;
   color: var(--grisOscuro);
 }
+
+.php {
+  background-color: var(--php);
+  text-transform: uppercase;
+}
+

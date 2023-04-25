@@ -101,6 +101,7 @@
                     <h2>Front-End & Back-End Developer</h2>
                     <p>I am an Ecuadorian Web Developer looking to offer adaptable websites, with any design you like.
                     </p>
+                    <button class="download_cv">Download CV</button>
                 </div>
                 <picture>
                     <img class="" src="resources/img/gatito.jpg" alt="Javier Alvarez Web Developer JavierWDev29">
@@ -113,135 +114,61 @@
         <section id="skills" class="">
             <h2>Skills</h2>
         </section>
+
+
+
         <section id="projects" class="my__projects">
+
             <h2 class="section--title">Projects</h2>
 
             <!-- Contenedor de Proyectos -->
-            <div class="projects__container">
+            <template id="template" class="projects__container">
+                <!-- Projects Template -->
+                    <div class="project">
+                        <!-- Imagen del proyecto -->
+                        <div class="project__ss">
+                            <img src="" alt="">
+                        </div>
 
-                <!-- Proyecto 1 -->
-                <div class="project">
+                        <!-- Tecnologias del proyecto -->
+                        <div class="project__technologies"></div>
 
-                    <!-- ProyectoImagen -->
-                    <div class="project__ss">
-                        <img src="resources/img/images.jpg" alt="">
-                    </div>
+                        <!-- Titulo del proyecto -->
+                        <div class="project__title">
+                            <h3></h3>
+                        </div>
 
-                    <!-- Proyecto Tecnologias -->
-                    <div class="project__technologies">
-                        <p class="html">HTML</p>
-                        <p class="css">CSS</p>
-                        <p class="js">Javascript</p>
-                    </div>
-
-                    <!-- Titulo del Proyecto -->
-                    <div class="project__tittle">
-                        <h3>Nombre del Proyecto</h3>
-                    </div>
-
-                    <!-- Overlay del Proyecto -->
-                    <div class="project__overlay">
-                        <div class="project__overlay__summary">
-                            <div class="project__overlay--head">
-                                <h3>Nombre del Proyecto</h3>
+                        <!-- OverlayProyecto -->
+                        <div class="project__overlay">
+                            <div class="project__overlay__summary">
+                                <div class="project__overlay--head">
+                                    <h3></h3>
+                                </div>
+                                <p class="project__status"></p>
+                                <p class="project__abstract"></p>
                             </div>
-                            <p class="project__status">Finished</p>
-                            <p class="project__abstract">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Quibusdam aliquam, laborum voluptatibus at commodi eaque consectetur accusamus expedita
-                                accusantium repudiandae?</p>
-                        </div>
-                        <div class="project__overlay__links">
-                            <a href="" class="bg--wp"><i class="fa-solid fa-laptop-code"></i>Link to Web Page</a>
-                            <a href="" class="bg--gh"><i class="fa-brands fa-github"></i>GitHub Repository</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Fin del proyecto -->
-
-                <!-- Proyecto 1 -->
-                <div class="project">
-
-                    <!-- ProyectoImagen -->
-                    <div class="project__ss">
-                        <img src="resources/img/images.jpg" alt="">
-                    </div>
-
-                    <!-- Proyecto Tecnologias -->
-                    <div class="project__technologies">
-                        <p class="html">HTML</p>
-                        <p class="css">CSS</p>
-                        <p class="js">Javascript</p>
-                    </div>
-
-                    <!-- Titulo del Proyecto -->
-                    <div class="project__tittle">
-                        <h3>Nombre del Proyecto</h3>
-                    </div>
-
-                    <!-- Overlay del Proyecto -->
-                    <div class="project__overlay">
-                        <div class="project__overlay__summary">
-                            <div class="project__overlay--head">
-                                <h3>Nombre del Proyecto</h3>
+                            <div class="project__overlay__links">
+                                <a href="" class="bg--wp" target="_blank"><i class="fa-solid fa-laptop-code"></i>Link to Web Page</a>
+                                <a href="" class="bg--gh" target="_blank"><i class="fa-brands fa-github"></i>GitHub Repository</a>
                             </div>
-                            <p class="project__status">Finished</p>
-                            <p class="project__abstract">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Quibusdam aliquam, laborum voluptatibus at commodi eaque consectetur accusamus expedita
-                                accusantium repudiandae?</p>
                         </div>
-                        <div class="project__overlay__links">
-                            <a href="" class="bg--wp"><i class="fa-solid fa-laptop-code"></i>Link to Web Page</a>
-                            <a href="" class="bg--gh"><i class="fa-brands fa-github"></i>GitHub Repository</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Fin del proyecto -->
 
-                <!-- Proyecto 1 -->
-                <div class="project">
-
-                    <!-- ProyectoImagen -->
-                    <div class="project__ss">
-                        <img src="resources/img/images.jpg" alt="">
                     </div>
+                <!-- End of projects Template -->
+            </template>
 
-                    <!-- Proyecto Tecnologias -->
-                    <div class="project__technologies">
-                        <p class="html">HTML</p>
-                        <p class="css">CSS</p>
-                        <p class="js">Javascript</p>
-                    </div>
-
-                    <!-- Titulo del Proyecto -->
-                    <div class="project__tittle">
-                        <h3>Nombre del Proyecto</h3>
-                    </div>
-
-                    <!-- Overlay del Proyecto -->
-                    <div class="project__overlay">
-                        <div class="project__overlay__summary">
-                            <div class="project__overlay--head">
-                                <h3>Nombre del Proyecto</h3>
-                            </div>
-                            <p class="project__status">Finished</p>
-                            <p class="project__abstract">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Quibusdam aliquam, laborum voluptatibus at commodi eaque consectetur accusamus expedita
-                                accusantium repudiandae?</p>
-                        </div>
-                        <div class="project__overlay__links">
-                            <a href="" class="bg--wp"><i class="fa-solid fa-laptop-code"></i>Link to Web Page</a>
-                            <a href="" class="bg--gh"><i class="fa-brands fa-github"></i>GitHub Repository</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Fin del proyecto -->
-            </div>
         </section>
+
+
+
         <section id="contact" class="">
             <h2>Contact</h2>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </section>
     </main>
+
+    <script src="resources/js/app.js" type="module"></script>
+
 </body>
 
 </html>
