@@ -10,6 +10,7 @@ async function leerProyectos() {
 
     } catch (error) {
         console.error("No pude acceder a los proyectos...");
+        console.info(error);
     }
 }
 
