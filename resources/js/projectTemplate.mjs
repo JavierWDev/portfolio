@@ -1,4 +1,25 @@
 async function leerProyectos() {
+
+    //Prueba de conexion
+    const conx1 = fetch("./proyectos.json");
+    console.log("Primera conexion:"+conx1);
+
+    const conx2 = fetch("/proyectos.json");
+    console.log("Segunda conexion:"+conx2);
+
+    const conx3 = fetch("proyectos.json");
+    console.log("Tercera conexion:"+conx3);
+
+    const conx4 = fetch("../proyectos.json");
+    console.log("Cuarta conexion:"+conx4);
+
+    const conx5 = fetch("/../../proyectos.json");
+    console.log("Quinta conexion:"+conx5);
+
+    const conx6 = fetch("./../../proyectos.json");
+    console.log("Quinta conexion:"+conx6);
+
+
     try {
         //Conexion al archivo de proyectos
         const proyectos = await fetch("../../proyectos.json")
