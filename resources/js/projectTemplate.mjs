@@ -1,26 +1,5 @@
 async function leerProyectos() {
 
-    //Prueba de conexion
-    const conx1 = fetch("./proyectos.json")
-                .then(resultado => console.log("Primera Conexion: "+resultado));
-
-
-    const conx2 = fetch("/proyectos.json")               
-                .then(resultado => console.log("Segunda Conexion: "+resultado));
-
-    const conx3 = fetch("proyectos.json")                
-                .then(resultado => console.log("Tercera Conexion: "+resultado));
-
-    const conx4 = fetch("../proyectos.json")                
-                .then(resultado => console.log("Cuarta Conexion: "+resultado));
-
-    const conx5 = fetch("/../../proyectos.json")               
-                    .then(resultado => console.log("Quinta Conexion: "+resultado));
-
-    const conx6 = fetch("./../../proyectos.json")                
-                    .then(resultado => console.log("Sexta Conexion: "+resultado));
-
-
     try {
         //Conexion al archivo de proyectos
         const proyectos = await fetch("../../proyectos.json")
@@ -43,7 +22,9 @@ function imprimirHTML(proyectos) {
     const $template = document.getElementById("template").content;
     const fragment = document.createDocumentFragment();
 
-    proyectos.forEach(proyecto => {
+    let i = 1;
+
+    proyectos.forEach(proyecto => {      
 
         //Agregando la imagen del proyecto
         $template.querySelector(".project__ss img").setAttribute("src", proyecto.imagen_proyecto);
@@ -64,6 +45,15 @@ function imprimirHTML(proyectos) {
 
         let $clone = document.importNode($template, true);
         fragment.appendChild($clone);
+
+        if( i >= 6 ){
+            $template.querySelector(".project").classList.add("visible1000");
+        }else if( i >= 4 ){
+            $template.querySelector(".project").classList.add("visible800");
+        }
+
+        i++;
+
     });
 
     $contenedorProyectos.appendChild(fragment);

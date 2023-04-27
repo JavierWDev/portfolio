@@ -130,6 +130,31 @@ picture {
   width: 100%;
 }
 
+.button {
+  padding: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  width: 90%;
+  max-width: 30rem;
+  margin: 2rem auto 1rem auto;
+  padding: 1rem 0;
+  font-size: 1.8rem;
+  background-color: var(--negroOscuro);
+  border: 3px solid var(--primarioOscuro);
+  color: var(--primarioClaro);
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform .3s, background-color .3s;
+}
+
+.button:hover {
+  color: var(--blanco);
+  transform: scale(1.025);
+  background-color: var(--primarioOscuro);
+}
+
 /* *******************************************
                   Utilities
 ******************************************* */
@@ -329,6 +354,7 @@ picture {
   gap: 1.5rem;
   padding: 4rem 0;
   min-height: 70vh;
+  border-bottom: 1px solid var(--grisOscuro);
 }
 
 /* Borrar esto xd */
@@ -376,31 +402,8 @@ picture {
   font-size: 1.4rem;
   font-weight: bold;
   letter-spacing: 1px;
-  padding: 1rem 0;
   color: var(--grisClaro);
   line-height: 1.5;
-}
-
-.download_cv{
-  display: block;
-  width: 90%;
-  max-width: 30rem;
-  margin: 0 auto 1rem auto;
-  padding: 1rem 0;
-  font-size: 1.8rem;
-  background-color: var(--negroOscuro);
-  border: 3px solid var(--primarioOscuro);
-  color: var(--primarioClaro);
-  font-weight: bold;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: transform .3s, background-color .3s;
-}
-
-.download_cv:hover{
-  transform: scale(1.025);
-  background-color: var(--primarioOscuro);
-  color: var(--blanco);
 }
 
 @media (min-width: 352px) {
@@ -461,6 +464,9 @@ picture {
   background-size: 20rem;
   background-color: var(--negro);
   padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .projects__container {
@@ -491,6 +497,7 @@ picture {
   display: flex;
   flex-direction: column;
   position: relative;
+  justify-content: space-evenly;
   overflow: hidden;
   border-radius: 5px;
   text-align: left;
@@ -500,11 +507,34 @@ picture {
   transform: translateY(0);
 }
 
+.project--home{
+  visibility: hidden;
+}
+
+.project--animation{
+  animation-name: showProject;
+  animation-duration: 1.5s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+}
+
+/* Project Animation */
+@keyframes showProject {
+  0%{
+    visibility: unset;
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
 /* Project Image */
 .project__ss {
   display: flex;
-  min-height: 20rem;
-  max-height: 22rem;
+
 }
 
 .project__ss img {
@@ -571,20 +601,6 @@ picture {
   color: var(--primario);
 }
 
-.project__overlay--head button {
-  background-color: unset;
-  border: none;
-  color: var(--primarioClaro);
-  padding: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: color 0.2s;
-}
-
-.project__overlay--head button:hover {
-  color: var(--blanco);
-}
-
 .project__status {
   font-weight: bold;
   color: var(--grisClaro);
@@ -635,10 +651,16 @@ picture {
   }
 }
 
-@media (min-width: 780px) {
+@media (min-width: 800px) {
   #template {
-    max-width: 110rem;
+    max-width: 140rem;
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  #template {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -664,3 +686,27 @@ picture {
   text-transform: uppercase;
 }
 
+/* Media Querys Projects */
+.visible800{
+  display: none; 
+}
+
+.visible1000{
+  display: none; 
+}
+
+@media (min-width: 800px) {
+  .visible800{
+    display: block;
+  }
+
+  .visible1000{
+    display: none; 
+  }
+}
+
+@media (min-width: 1000px) {
+  .visible1000{
+    display: block; 
+  }
+}

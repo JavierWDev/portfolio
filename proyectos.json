@@ -3,7 +3,7 @@
     "proyectos": [
         {
             "id_proyecto": "1",
-            "nombre_proyecto": "Nombre del Proyecto",
+            "nombre_proyecto": "Nombre del Proyecto 1",
             "estado_proyecto": "Finished",
             "abstracto_proyecto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquam, laborum voluptatibus at commodi eaque consectetur accusamus expedita accusantium repudiandae?",
             "imagen_proyecto": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bGFuZGluZyUyMHBhZ2V8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
@@ -15,7 +15,7 @@
             "github": "https://web.whatsapp.com/"
         },
         {
-            "id_proyecto": "1",
+            "id_proyecto": "2",
             "nombre_proyecto": "Nombre del Proyecto 2",
             "estado_proyecto": "On Progress",
             "abstracto_proyecto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquam, laborum voluptatibus at commodi eaque consectetur accusamus expedita accusantium repudiandae?",
@@ -29,11 +29,86 @@
             "github": "https://web.whatsapp.com/"
         },
         {
-            "id_proyecto": "1",
-            "nombre_proyecto": "Nombre del Proyecto",
+            "id_proyecto": "3",
+            "nombre_proyecto": "Nombre del Proyecto 3",
             "estado_proyecto": "Finished",
             "abstracto_proyecto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquam, laborum voluptatibus at commodi eaque consectetur accusamus expedita accusantium repudiandae?",
             "imagen_proyecto": "https://images.unsplash.com/photo-1594322436404-5a0526db4d13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bGFuZGluZyUyMHBhZ2V8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+            "tecnologias": [
+                "html",
+                "css",
+                "javascript",
+                "php"
+            ],
+            "link": "https://www.google.com",
+            "github": "https://web.whatsapp.com/"
+        },
+        {
+            "id_proyecto": "4",
+            "nombre_proyecto": "Nombre del Proyecto 4",
+            "estado_proyecto": "Starting",
+            "abstracto_proyecto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquam, laborum voluptatibus at commodi eaque consectetur accusamus expedita accusantium repudiandae?",
+            "imagen_proyecto": "https://images.unsplash.com/photo-1600267165477-6d4cc741b379?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "tecnologias": [
+                "html",
+                "css",
+                "javascript",
+                "php"
+            ],
+            "link": "https://www.google.com",
+            "github": "https://web.whatsapp.com/"
+        },
+        {
+            "id_proyecto": "5",
+            "nombre_proyecto": "Nombre del Proyecto 5",
+            "estado_proyecto": "Starting",
+            "abstracto_proyecto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquam, laborum voluptatibus at commodi eaque consectetur accusamus expedita accusantium repudiandae?",
+            "imagen_proyecto": "https://images.unsplash.com/photo-1661956602944-249bcd04b63f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "tecnologias": [
+                "html",
+                "css",
+                "javascript",
+                "php"
+            ],
+            "link": "https://www.google.com",
+            "github": "https://web.whatsapp.com/"
+        },
+        {
+            "id_proyecto": "6",
+            "nombre_proyecto": "Nombre del Proyecto 6",
+            "estado_proyecto": "Starting",
+            "abstracto_proyecto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquam, laborum voluptatibus at commodi eaque consectetur accusamus expedita accusantium repudiandae?",
+            "imagen_proyecto": "https://images.unsplash.com/photo-1602992708529-c9fdb12905c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "tecnologias": [
+                "html",
+                "css",
+                "javascript",
+                "php"
+            ],
+            "link": "https://www.google.com",
+            "github": "https://web.whatsapp.com/"
+        },
+        {
+            "id_proyecto": "7",
+            "nombre_proyecto": "Nombre del Proyecto 7",
+            "estado_proyecto": "Starting",
+            "abstracto_proyecto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquam, laborum voluptatibus at commodi eaque consectetur accusamus expedita accusantium repudiandae?",
+            "imagen_proyecto": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
+            "tecnologias": [
+                "html",
+                "css",
+                "javascript",
+                "php"
+            ],
+            "link": "https://www.google.com",
+            "github": "https://web.whatsapp.com/"
+        },
+        {
+            "id_proyecto": "8",
+            "nombre_proyecto": "Nombre del Proyecto 8",
+            "estado_proyecto": "Starting",
+            "abstracto_proyecto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquam, laborum voluptatibus at commodi eaque consectetur accusamus expedita accusantium repudiandae?",
+            "imagen_proyecto": "https://images.unsplash.com/photo-1580894908361-967195033215?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
             "tecnologias": [
                 "html",
                 "css",
